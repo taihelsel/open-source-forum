@@ -23,11 +23,48 @@ html,body,.App{
     position: absolute;
     top:0;
 }
+.nav-control-wrapper{
+    float:right;
+    margin:0;
+    padding:0;
+    list-style: none;
+    margin-right:2em;
+    height:100%;
+}
+.hamburger-btn{
+    display:inline-block;
+    cursor:pointer;
+    width:2.5em;
+    margin-top:0.25em;
+}
+.hamburger-btn div{
+    width:100%;
+    height:5px;
+    background-color:var(--paper);
+    margin:6px 0;
+    transition: all 0.4s ease;
+    border-radius:6px;
+}
+.hamburger-btn-x div:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.hamburger-btn-x div:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-btn-x div:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
 .header-nav .social-links-wrapper{
     list-style: none;
     margin:0;
+    padding:0;
+    margin-left:4.5em;
     height:100%;
     text-align: left;
+    display:inline-block;
 }
 .header-nav .social-links-wrapper .social-link-item{
     width:2em;
@@ -53,7 +90,7 @@ html,body,.App{
     color:var(--tangerine);
     user-select: none;
     font-weight: lighter;
-    border:3px solid;
+    background-color:var(--charcoal);
 }
 /*Home Page*/
 #Home{
