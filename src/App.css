@@ -31,11 +31,32 @@ html,body,.App{
     margin-right:2em;
     height:100%;
 }
+.searchbox{
+    display:inline-block;
+    position: relative;
+    bottom:0.8em;
+    height:100%;
+    color:var(--paper);
+}
+.searchbox input{
+    height: 50%;
+    background: transparent;
+    border: none;
+    color: var(--paper);
+    font-size: 18px;
+}
+.searchbox input::placeholder {
+    color:var(--paper);
+}
+.searchbox input::-ms-input-placeholder {
+    color:var(--paper);
+}
 .hamburger-btn{
     display:inline-block;
     cursor:pointer;
     width:2.5em;
     margin-top:0.25em;
+    margin-left: 2em;
 }
 .hamburger-btn div{
     width:100%;

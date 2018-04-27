@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 class Header extends Component {
-    handleHamburgerClick = (e) =>{
-        if(e.currentTarget.classList.contains("hamburger-btn-x")===true){
+    handleHamburgerClick = (e) => {
+        if (e.currentTarget.classList.contains("hamburger-btn-x") === true) {
             //Close hamburger menu & revert to original state
             e.currentTarget.classList.remove("hamburger-btn-x");
-            
-        }else{
+
+        } else {
             //Open hamburger menu and convert item to X
             e.currentTarget.classList.add("hamburger-btn-x");
         }
@@ -34,6 +34,9 @@ class Header extends Component {
                         </li>
                     </ul>
                     <ul className="nav-control-wrapper">
+                        <li className="searchbox">
+                            <input type="text" placeHolder="Search" />
+                        </li>
                         <li onClick={this.handleHamburgerClick} className="hamburger-btn">
                             <div></div>
                             <div></div>
