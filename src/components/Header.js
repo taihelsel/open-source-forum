@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class Header extends Component {
     handleHamburgerClick = (e) => {
+        alert("todo onclick");
         if (e.currentTarget.classList.contains("hamburger-btn-x") === true) {
             //Close hamburger menu & revert to original state
             e.currentTarget.classList.remove("hamburger-btn-x");
@@ -10,6 +11,9 @@ class Header extends Component {
             //Open hamburger menu and convert item to X
             e.currentTarget.classList.add("hamburger-btn-x");
         }
+    }
+    handleSearchClick = (e) =>{
+        alert("todo onclick");
     }
     render() {
         return (
@@ -34,8 +38,8 @@ class Header extends Component {
                         </li>
                     </ul>
                     <ul className="nav-control-wrapper">
-                        <li className="searchbox">
-                            <input type="text" placeHolder="&#x1F50D; &nbsp; Search" />
+                        <li onClick={this.handleSearchClick} className="search-btn">
+                            <img src={require(".././media/images/icons/search-icon.png")} alt="Search Icon"/>
                         </li>
                         <li onClick={this.handleHamburgerClick} className="hamburger-btn">
                             <div></div>
