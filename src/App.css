@@ -1,8 +1,39 @@
+:root{
+    --tangerine:#E37222;
+    --paper:#F4F4F4;
+    --charcoal:#373737;
+    --gainsbro:#DFDFDF;
+    --yellow:#F9DC5C;
+    --darkblue:#08415C;
+}
 .App{
 
 }
+/*Header Stuff*/
 #Header{
-    
+    height:22vw;
+    width:100%;
+    position: relative;
+}
+.header-nav{
+    background-color:var(--charcoal);
+    height:4em;
+    width:100%;
+    position: absolute;
+    top:0;
+}
+.header-placeholder{
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    margin-top:7vw;
+    font-size:4.4vw;
+    left:30vw;
+    padding:2vw 6vw;
+    border-radius:7px;
+    color:var(--tangerine);
+    user-select: none;
+    font-weight: lighter;
+    border:1px solid;
 }
 /*Home Page*/
 #Home{
