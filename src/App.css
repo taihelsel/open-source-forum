@@ -5,9 +5,10 @@
     --gainsbro:#DFDFDF;
     --yellow:#F9DC5C;
     --darkblue:#08415C;
+    --whiteblue:#ebecf5;
 }
-.App{
-
+html,body,.App{
+    background-color:var(--whiteblue);
 }
 /*Header Stuff*/
 #Header{
@@ -16,7 +17,7 @@
     position: relative;
 }
 .header-nav{
-    background-color:var(--charcoal);
+    background-color:var(--darkblue);
     height:3em;
     width:100%;
     position: absolute;
@@ -30,9 +31,9 @@
 }
 .header-nav .social-links-wrapper .social-link-item{
     width:2em;
-    margin:0.5em  0.8em;
+    margin:0.5em  0.55em;
     display:inline-block;
-    filter:contrast(108%);
+    filter:contrast(130%);
 }
 .header-nav .social-links-wrapper .social-link-item a, .header-nav .social-links-wrapper .social-link-item a img{
     width:100%;
