@@ -8,7 +8,7 @@ class Home extends Component {
     return (
         <section id="Home" >
             <Header />
-            Home page
+            
         </section>
     );
   }
