@@ -35,7 +35,7 @@ class Header extends Component {
                     </ul>
                     <ul className="nav-control-wrapper">
                         <li className="searchbox">
-                            <input type="text" placeHolder="Search" />
+                            <input type="text" placeHolder="&#x1F50D; &nbsp; Search" />
                         </li>
                         <li onClick={this.handleHamburgerClick} className="hamburger-btn">
                             <div></div>
