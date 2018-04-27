@@ -28,7 +28,7 @@ html,body,.App{
     margin:0;
     padding:0;
     list-style: none;
-    margin-right:2em;
+    margin-right:3em;
     height:100%;
 }
 .hamburger-btn{
@@ -36,7 +36,6 @@ html,body,.App{
     cursor:pointer;
     width:2.4em;
     margin-top:0.25em;
-    margin-left: 2em;
 }
 .hamburger-btn div{
     width:100%;
@@ -57,6 +56,12 @@ html,body,.App{
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
+.control-divider{
+    display:inline-block;
+    border-left:1px solid #f4f4f496;
+    height:75%;
+    margin:0.1em 1.5em;
+}
 .search-btn{
     display: inline-block;
     position: relative;
@@ -73,7 +78,7 @@ html,body,.App{
     list-style: none;
     margin:0;
     padding:0;
-    margin-left:4.5em;
+    margin-left:3em;
     height:100%;
     text-align: left;
     display:inline-block;
@@ -99,7 +104,7 @@ html,body,.App{
     left:30vw;
     padding:2vw 6vw;
     border-radius:7px;
-    color:var(--tangerine);
+    color:var(--whiteblue);
     user-select: none;
     font-weight: lighter;
     background-color:var(--charcoal);
