@@ -50,11 +50,13 @@ html,body,.App{
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 .hamburger-btn-x div:nth-child(2) {
-    opacity: 0;
+    background-color: var(--darkblue);
+    z-index: 2;
+    transform: rotate(1deg);
 }
 .hamburger-btn-x div:nth-child(3) {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(45deg) translate(-8px, -7px);
+    transform: rotate(45deg) translate(-8px, -7px);
 }
 .control-divider{
     display:inline-block;
