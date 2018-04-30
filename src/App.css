@@ -12,7 +12,7 @@ html,body,.App{
 }
 /*Header Stuff*/
 #Header{
-    height:24vw;
+    height:22vw;
     width:100%;
     position: relative;
 }
@@ -105,18 +105,82 @@ html,body,.App{
     font-size:4vw;
     left:33vw;
     padding:1vw 4vw;
-    border-radius:7px;
-    color:var(--whiteblue);
+    border-radius:13px;
+    color:var(--darkblue);
     user-select: none;
     font-weight: lighter;
-    background-color:var(--tangerine);
+    border-left:5.5px solid var(--darkblue);
+    border-right: 5.5px solid var(--darkblue);
 }
 /*Home Page*/
 #Home{
 
 }
 .highlights{
-    width:80%;
-    display:inline-block;
+    display: block;
     text-align: center;
+}
+.highlight-reel{
+    list-style: none;
+    margin:0;
+    padding:0;
+    text-align: center;
+    display: inline-block;
+    width:90%;
+}
+.highlight-item{
+    display:inline-block;
+    height:48vmax;
+    width:100%;
+}
+.highlight-item img{
+    width:75%;
+    height:100%;
+    display:inline-block;
+    float:right;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.highlight-desc{
+    height: 100%;
+    width: 21%;
+    display: inline-block;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--charcoal);
+    padding: 0 2%;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.highlight-desc li{
+    position: relative;
+}
+.highlight-desc li h1{
+    font-size:2vw;
+    color: var(--paper);
+    margin-bottom:0;
+}
+.highlight-desc li h1::after{
+    content:" ";
+    border-bottom:2px solid white;
+    display: block;
+    width:3vmax;
+    margin-top:1.5vmax;
+}
+.highlight-desc li p{
+    line-height: 2vmax;
+    color:var(--paper);
+    text-align: left;
+}
+.highlight-desc li button{
+    padding:0.5vmax 1vmax;
+    font-size:1.4vmax;
+    color:var(--paper);
+    border: 2px solid var(--paper);
+    background-color:transparent;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-top:1vmax;
 }
