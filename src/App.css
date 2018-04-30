@@ -102,16 +102,21 @@ html,body,.App{
     font-family: 'Pacifico', cursive;
     position: absolute;
     margin-top:7vw;
-    font-size:4.4vw;
-    left:30vw;
-    padding:2vw 6vw;
+    font-size:4vw;
+    left:33vw;
+    padding:1vw 4vw;
     border-radius:7px;
     color:var(--whiteblue);
     user-select: none;
     font-weight: lighter;
-    background-color:var(--charcoal);
+    background-color:var(--tangerine);
 }
 /*Home Page*/
 #Home{
 
+}
+.highlights{
+    width:80%;
+    display:inline-block;
+    text-align: center;
 }
