@@ -19,11 +19,12 @@ html,body,.App{
     position: relative;
 }
 .header-nav{
-    background-color:var(--darkblue);
-    height:3em;
+    background-color:var(--charcoal);
+    height:2.5em;
     width:100%;
     position: fixed;
     top:0;
+    z-index: 9989;
 }
 .nav-control-wrapper{
     float:right;
@@ -36,12 +37,12 @@ html,body,.App{
 .hamburger-btn{
     display:inline-block;
     cursor:pointer;
-    width:2.4em;
-    margin-top:0.25em;
+    width:2.25em;
+    margin-top:0.05em;
 }
 .hamburger-btn div{
     width:100%;
-    height:4px;
+    height:3px;
     background-color:var(--paper);
     margin:7px 0;
     transition: all 0.4s ease;
@@ -52,25 +53,25 @@ html,body,.App{
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 .hamburger-btn-x div:nth-child(2) {
-    background-color: var(--darkblue);
+    background-color: var(--charcoal);
     z-index: 2;
     transform: rotate(1deg);
 }
 .hamburger-btn-x div:nth-child(3) {
-    -webkit-transform: rotate(45deg) translate(-8px, -7px);
-    transform: rotate(45deg) translate(-8px, -7px);
+    -webkit-transform: rotate(45deg) translate(-8px, -6px);
+    transform: rotate(45deg) translate(-7px, -6px);
 }
 .control-divider{
     display:inline-block;
     border-left:1px solid #f4f4f496;
     height:75%;
-    margin:0.1em 1.5em;
+    margin:0em 1.5em 0.25em 1.5em;
 }
 .search-btn{
     display: inline-block;
     position: relative;
-    bottom:0.35em;
-    width:1.8em;
+    bottom:0.45em;
+    width:1.6em;
     filter: invert(100%) contrast(125%);
     cursor: pointer;
 }
@@ -89,7 +90,7 @@ html,body,.App{
 }
 .header-nav .social-links-wrapper .social-link-item{
     width:1.4em;
-    margin:0.75em  0.55em;
+    margin:0.55em  0.55em;
     display:inline-block;
     filter:invert(95%);
 }
@@ -185,4 +186,73 @@ html,body,.App{
     cursor: pointer;
     font-weight: bolder;
     margin-top:1vmax;
+}
+.BlogPosts{
+    width:100%;
+    display:block;
+    position: relative;
+    text-align: center;
+    margin-top:5%;
+}
+.BlogPosts ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    width:80%;
+    display: inline-block;
+    text-align: left;
+}
+.post-preview{
+    display:inline-block;
+    background-color:#052c4ed1;
+    width:30%;
+    margin-bottom:3%;
+    margin-right:3%;
+    border-radius: 4px;
+    overflow:hidden;
+    text-align: center;
+    position: relative;
+    padding-bottom:5%;
+}
+.post-preview h1{
+    font-size:2.5vw;
+    margin-bottom:10px;
+    position: absolute;
+    top:12%;
+    text-align: center;
+    width:100%;
+    color:var(--yellow);
+    font-weight: bolder;
+    text-shadow: var(--charcoal) 1px 1px 0px;
+    font-family: 'Roboto Slab', serif;
+}
+.post-preview p{
+    text-align: left;
+    width:80%;
+    display:inline-block;
+    font-size:18px;
+    color:var(--paper);
+    letter-spacing: 1.05px;
+    line-height: 22px;
+    font-family: 'Roboto Slab', serif;
+    font-weight:lighter;
+}
+.post-preview img{
+    width:100%;
+    height:18vw;
+    margin-bottom:10px;
+    filter: blur(1.5px);
+}
+.post-preview a{
+    text-decoration: none;
+    font-size:15px;
+    position: absolute;
+    bottom:12px;
+    right: 12px;
+    color:var(--whiteblue);
+    border:2px solid var(--whiteblue);
+    padding:7px 9px;
+    border-radius: 3px;    
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
 }
