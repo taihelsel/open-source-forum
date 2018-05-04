@@ -126,6 +126,7 @@ html,body,.App{
 #Home{
 
 }
+    /*Post Highlights*/
 .highlights{
     display: block;
     text-align: center;
@@ -144,14 +145,16 @@ html,body,.App{
     padding:0;
     text-align: center;
     display: inline-block;
-    width:90%;
-}
-.highlight-item{
-    display:inline-block;
-    height:48vmax;
     width:100%;
 }
-.highlight-item img{
+.main-highlight-item{
+    display: inline-block;
+    height: 44vmax;
+    width: 65%;
+    float: left;
+    margin-left: 1.75%;
+}
+.main-highlight-item img{
     width:75%;
     height:100%;
     display:inline-block;
@@ -159,7 +162,7 @@ html,body,.App{
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
 }
-.highlight-desc{
+.main-highlight-desc{
     height: 100%;
     width: 21%;
     display: inline-block;
@@ -171,28 +174,30 @@ html,body,.App{
     padding: 0 2%;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
-}
-.highlight-desc li{
     position: relative;
 }
-.highlight-desc li h1{
+.main-highlight-desc li{
+    position: relative;
+    width:100%;
+}
+.main-highlight-desc li h1{
     font-size:2vw;
     color: var(--paper);
     margin-bottom:0;
 }
-.highlight-desc li h1::after{
+.main-highlight-desc li h1::after{
     content:" ";
     border-bottom:2px solid var(--paper);
     display: block;
     width:3vmax;
     margin-top:1.5vmax;
 }
-.highlight-desc li p{
+.main-highlight-desc li p{
     line-height: 2vmax;
     color:var(--paper);
     text-align: left;
 }
-.highlight-desc li button{
+.main-highlight-desc button{
     padding:0.5vmax 1vmax;
     font-size:1.4vmax;
     color:var(--paper);
@@ -201,7 +206,41 @@ html,body,.App{
     cursor: pointer;
     font-weight: bolder;
     margin-top:1vmax;
+    position: absolute;
+    bottom: 1vmax;
+    left:15%;
 }
+.secondary-highlights{
+    list-style: none;
+    display:inline-block;
+    float:right;
+    margin:0;
+    padding:0;
+    width:32%;
+    text-align: center;
+}
+.secondary-highlight-item{
+    display:inline-block;
+    width:95%;
+    position: relative;
+    overflow: hidden;
+    margin:2% 0;
+    cursor:pointer;
+}
+.secondary-highlight-item h1{
+    position: absolute;
+    top:35%;
+    left:29%;
+    color:white;
+    font-size:2.2vmax;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+}
+.secondary-highlight-item img{
+    width:100%;
+    height:100%;
+}
+    /*Blog Posts*/
 .BlogPosts{
     width:100%;
     display:block;
@@ -212,15 +251,14 @@ html,body,.App{
     list-style: none;
     margin:0;
     padding:0;
-    width:80%;
+    width:100%;
     display: inline-block;
     text-align: left;
 }
 .post-preview{
     display:inline-block;
-    width:30%;
-    margin-bottom:1.75%;
-    margin-right:3%;
+    width:25%;
+    margin:0 0 1.5% 6.2%;
     overflow:hidden;
     text-align: center;
     position: relative;
