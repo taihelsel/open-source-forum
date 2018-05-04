@@ -7,12 +7,11 @@ class BlogPosts extends Component {
     return (
         <section className="BlogPosts" >
             <ul>
-                <PostPreview title={"Travel Post"} content={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cum reprehenderit quam sequi autem delectus assumenda illo ipsa praesentium velit mollitia dolorum perspiciatis rem, distinctio blanditiis..."} src={require("../.././media/images/stockphotos/calamity.jpg")} />
+                <PostPreview title={"Travel Post"} content={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cum reprehenderit quam sequi autem delectus assumenda illo ipsa praesentiu.."} src={require("../.././media/images/stockphotos/calamity.jpg")} />
                 <PostPreview title={"Food Post"} content={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cum reprehenderit quam sequi autem delectus assumenda illo ipsa praesentium velit mollitia dolorum perspiciatis rem, distinctio blanditiis..."} src={require("../.././media/images/stockphotos/calamity.jpg")} />
-                <PostPreview title={"Lorem Ipsum"} content={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cum reprehenderit quam sequi autem delectus assumenda illo ipsa praesentium velit mollitia dolorum perspiciatis rem, distinctio blanditiis..."} src={require("../.././media/images/stockphotos/calamity.jpg")} />
+                <PostPreview title={"Lorem Ipsum"} content={"Lorem  dolor sit amet consectetur adipisicing elit. Dicta cum reprehenderit quam sequi autem delectus assumenda illo ipsa praesentium velit mollitia dolorum perspiciatis rem, distinctio blanditiis..."} src={require("../.././media/images/stockphotos/calamity.jpg")} />
                 <PostPreview title={"Life style"} content={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cum reprehenderit quam sequi autem delectus assumenda illo ipsa praesentium velit mollitia dolorum perspiciatis rem, distinctio blanditiis..."} src={require("../.././media/images/stockphotos/calamity.jpg")} />
-                <PostPreview title={"10 Things"} content={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cum reprehenderit quam sequi autem delectus assumenda illo ipsa praesentium velit mollitia dolorum perspiciatis rem, distinctio blanditiis..."} src={require("../.././media/images/stockphotos/calamity.jpg")} />
-            
+                <PostPreview title={"10 Things"} content={"Lorem ipsum  sit amet consectetur adipisicing elit. Dicta cum reprehenderit quam sequi autem delectus assumenda illo ipsa praesentium velit mollitia dolorum perspiciatis rem, distinctio blanditiis..."} src={require("../.././media/images/stockphotos/calamity.jpg")} />
             </ul>
         </section>
     );
