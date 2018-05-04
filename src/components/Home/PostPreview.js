@@ -6,7 +6,9 @@ class PostPreview extends Component {
             <img src={this.props.src} alt=""/>
             <h1>{this.props.title}</h1>
             <p>{this.props.content}</p>
-            <a href="">Keep Reading...</a>
+            <div className="post-preview-footer">
+              <a href="">Keep Reading...</a>
+            </div>
         </li>
     );
   }
