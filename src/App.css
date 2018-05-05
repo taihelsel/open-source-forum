@@ -348,4 +348,5 @@ html,body,.App{
     font-family: 'Roboto', serif;
     font-weight:600;
     text-transform:uppercase;
+    user-select:none;
 }
