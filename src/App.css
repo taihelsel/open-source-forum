@@ -224,7 +224,8 @@ html,body,.App{
     width:95%;
     position: relative;
     overflow: hidden;
-    margin:2% 0;
+    margin-top:2%;
+    margin-bottom:4%;
     cursor:pointer;
 }
 .secondary-highlight-item h1{
@@ -310,5 +311,5 @@ html,body,.App{
 }
 /*Single Post*/
 #SinglePost{
-    
+
 }
