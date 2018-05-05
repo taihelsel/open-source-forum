@@ -7,7 +7,12 @@ class SinglePost extends Component {
     return (
         <section id="SinglePost">
             <Header />
-            :Something here:
+            <hr className="head-divider" />
+            <div className="single-post-head">
+              <img src={require("../.././media/images/stockphotos/camera.jpg")} alt="Image of a camera" />
+              <div className="single-post-head-mask" />
+              <h1 className="single-post-head-label">Camera Ipsum</h1>
+            </div>
         </section>
     );
   }

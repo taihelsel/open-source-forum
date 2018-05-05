@@ -224,8 +224,8 @@ html,body,.App{
     width:95%;
     position: relative;
     overflow: hidden;
-    margin-top:2%;
-    margin-bottom:4%;
+    margin-top:3%;
+    margin-bottom:3%;
     cursor:pointer;
 }
 .secondary-highlight-item h1{
@@ -311,5 +311,41 @@ html,body,.App{
 }
 /*Single Post*/
 #SinglePost{
-
+    text-align:center;
+    overflow:hidden;
+}
+.head-divider{
+    width:100%;
+    border-top:1px solid var(--whiteblue);
+    margin-bottom:35px;
+}
+.single-post-head{
+    width:95%;
+    height:48vw;
+    display:inline-block;
+    position:relative;
+}
+.single-post-head img{
+    width:100%;
+    height:100%;
+}
+.single-post-head-mask{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.33;
+}
+.single-post-head-label{
+    font-size:8vw;
+    color:white;
+    position:absolute;
+    top:30%;
+    width:100%;
+    text-align:center;
+    font-family: 'Roboto', serif;
+    font-weight:600;
+    text-transform:uppercase;
 }
