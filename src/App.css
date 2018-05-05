@@ -339,7 +339,7 @@ html,body,.App{
     opacity: 0.33;
 }
 .single-post-head-label{
-    font-size:8vw;
+    font-size:7vw;
     color:white;
     position:absolute;
     top:30%;
@@ -349,4 +349,19 @@ html,body,.App{
     font-weight:600;
     text-transform:uppercase;
     user-select:none;
+}
+#PostContent{
+    width:60%;
+    margin-left:50px;
+}
+.article-content{
+    font-size:21px;
+    text-align: left;
+    line-height:26px;
+}
+.first-paragraph::first-letter { 
+    font-size:35px;
+    margin-right:5px; 
+    margin-left:12px;
+    font-weight:bolder;
 }
