@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 /*ReactComponents*/
-import ExplorerNav from "./Explorer/ExplorerNav.js";
+import Explorer from "./Explorer/Explorer.js";
 class PostSidebar extends Component {
   render() {
     return (
         <div id="PostSidebar">
-          <ExplorerNav />
+          <Explorer />
         </div>
     );
   }

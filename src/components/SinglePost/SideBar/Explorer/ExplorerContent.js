@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 
+/*React Components*/
+import Latest from "./Latest.js";
 class ExplorerContent extends Component {
     render() {
         switch (this.props.currentNav.toLowerCase()) {
             case "latest":
-                return (
-                    <div>
-                        latest stuff
-                    </div>
-                );
+                return <Latest />
                 break;
             case "popular":
                 return (
