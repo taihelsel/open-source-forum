@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import Header from ".././Header.js";
 import PostHead from "./PostHead.js";
 import PostContent from "./PostContent.js";
+import PostSidebar from "./SideBar/PostSidebar.js";
 class SinglePost extends Component {
   render() {
     return (
@@ -12,6 +13,7 @@ class SinglePost extends Component {
             <hr className="head-divider" />
             <PostHead />
             <PostContent />
+            <PostSidebar />
         </section>
     );
   }
