@@ -443,7 +443,7 @@ html,body,.App{
     width:60%;
     font-weight:500;
     font-family:"Roboto", sans-serif;
-    font-size:22px;
+    font: size 21px;
     margin-top:10px;
 }
 .explorer-latest-item-stats{
