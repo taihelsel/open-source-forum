@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
-
+/*React Components*/
+import ExporerContent from "./ExplorerContent.js";
 class ExplorerNav extends Component {
+    constructor(){
+        super();
+        this.state = {
+            currentNav:"Latest",
+        }
+    }
     handleNavClick = (e) =>{
         if(!(e.currentTarget.classList.contains("selected"))){
             document.getElementById("explorer-nav").getElementsByClassName("selected")[0].classList.remove("selected");
             e.currentTarget.classList.add("selected");
+            this.setState({
+                currentNav:e.currentTarget.innerText,
+            })
         }
     }
     render() {
@@ -15,6 +25,7 @@ class ExplorerNav extends Component {
                     <li onClick={this.handleNavClick}>Popular</li>
                     <li onClick={this.handleNavClick}>Tags</li>
                 </ul>
+                <ExporerContent currentNav={this.state.currentNav} />
             </div>
         );
     }

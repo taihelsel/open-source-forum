@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 /*ReactComponents*/
-import ExplorerNav from "./ExplorerNav.js";
+import ExplorerNav from "./Explorer/ExplorerNav.js";
 class PostSidebar extends Component {
   render() {
     return (
