@@ -403,6 +403,7 @@ html,body,.App{
     text-transform: uppercase;
     font-weight: bolder;
     color:var(--charcoal);
+    user-select: none;
 }
 #explorer-nav ul li:nth-child(2){
     border-left:1px solid var(--paper);
