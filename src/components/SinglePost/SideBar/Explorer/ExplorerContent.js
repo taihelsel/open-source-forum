@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 /*React Components*/
 import Latest from "./Latest.js";
+import Popular from "./Popular.js";
 class ExplorerContent extends Component {
     render() {
         switch (this.props.currentNav.toLowerCase()) {
@@ -9,11 +10,7 @@ class ExplorerContent extends Component {
                 return <Latest />
                 break;
             case "popular":
-                return (
-                    <div>
-                        popular stuff
-                    </div>
-                );
+                return <Popular />
                 break;
             case "tags":
                 return (

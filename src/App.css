@@ -419,6 +419,7 @@ html,body,.App{
     padding:0;
     list-style: none;
 }
+        /*Latest*/
 .explorer-latest-item{
     width:90%;
     height:4em;
@@ -435,16 +436,16 @@ html,body,.App{
     float:left;
 }
 .explorer-latest-item  h1{
-    margin:0;
-    padding:0;
-    display:inline-block;
-    float:right;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
     text-align: left;
-    width:60%;
-    font-weight:500;
-    font-family:"Roboto", sans-serif;
-    font: size 21px;
-    margin-top:10px;
+    width: 64%;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    margin-top: 6px;
 }
 .explorer-latest-item-stats{
     position: absolute;
@@ -452,4 +453,10 @@ html,body,.App{
     right:0;
     text-align:center;
     width:100%;
+}
+        /*Popular*/
+#explorer-popular-container{
+    margin:0;
+    padding:0;
+    list-style: none;
 }
