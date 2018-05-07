@@ -460,3 +460,11 @@ html,body,.App{
     padding:0;
     list-style: none;
 }
+.explorer-popular-item{
+    width:100%;
+    height:20vw;
+}
+.explorer-popular-item img{
+    width:100%;
+    height:100%;
+}
