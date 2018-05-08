@@ -379,6 +379,17 @@ html,body,.App{
     float:right;
     margin-right:50px;
     margin-top:75px;
+    position: relative;
+}
+.sidebar-search{
+    margin-bottom:35px;
+    width:95%;
+    display:inline-block;
+    height:2em;
+    background-color:white;
+    color:var(--charcoal);
+    font-size:18px;
+    border:none;
 }
 #explorer-nav{
     width:100%;
