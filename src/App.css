@@ -383,12 +383,13 @@ html,body,.App{
     font-weight:lighter;
     font-size:22px;
 }
-    /*Post Content*/
-#PostContent{
+    /*Article Content*/
+#Article{
     width:60%;
     margin-left:50px;
     display:inline-block;
     float:left;
+    margin-bottom:30px;
 }
 .author-info-head{
     text-align: left;
@@ -397,14 +398,14 @@ html,body,.App{
 .author-info-head p, .author-info-head a{
     display:inline-block;
     font-style:italic;
+    font-size:16px;
+    font-family:"Lobster", serif;
+    font-weight:bold;
 }
 .author-info-head a{
     color:#1da1f2;
     text-decoration: none;
     margin-left:15px;
-}
-.author-info-head p{
-    font-family:"Lobster", serif;
 }
 .article-content{
     font-size:20px;
@@ -420,6 +421,41 @@ html,body,.App{
     font-weight:600;
     font-family: 'Lobster', serif;
     color:var(--charcoal);
+}
+    /*Author About*/
+#about-author{
+    float:left;
+    width: 60%;
+    margin-left: 50px;
+    text-align: left;
+    position: relative;
+    padding-bottom:1.25vw;
+    border-top:3px solid grey;   
+    padding-top:12px;
+}
+.author-headshot{
+    width:10vw;
+    height:10vw;
+    border-radius: 15em;
+    display:inline-block;
+    margin-top:1vw;
+}
+.author-name{
+    display:inline-block;
+    position: absolute;
+    top: 12px;
+    left:22%;
+    font-size:25px;
+    font-family: "Railway", sans-serif;
+}
+.author-about{
+    width:75%;
+    display:inline-block;
+    position: relative;
+    bottom:0;
+    margin-left:3vw;
+    font-size:19px;
+    font-family: "Lobster", serif;
 }
     /*Post Sidebar*/
 #PostSidebar{

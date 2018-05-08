@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 /*React Components*/
 import Header from ".././Header.js";
 import PostHead from "./PostHead.js";
-import PostContent from "./PostContent.js";
+import Article from "./Body/Article.js";
+import AuthorAbout from "./Body/AuthorAbout";
 import PostSidebar from "./SideBar/PostSidebar.js";
 class SinglePost extends Component {
   render() {
@@ -12,8 +13,9 @@ class SinglePost extends Component {
             <Header />
             <hr className="head-divider" />
             <PostHead />
-            <PostContent />
             <PostSidebar />
+            <Article />
+            <AuthorAbout />
         </section>
     );
   }
