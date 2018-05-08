@@ -4,6 +4,10 @@ class PostContent extends Component {
   render() {
     return (
       <div id="PostContent">
+        <div className="author-info-head">
+          <p>By John Doe</p>
+          <a href="http://www.twitter.com/" target="_blank">@JohnDoe82</a>
+        </div>
         <p className="article-content first-paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tellus rhoncus, aliquet dolor a, tristique mi. Praesent hendrerit ante quis mattis tincidunt. Donec quis ligula ullamcorper, eleifend felis et, molestie sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris tempor, erat vitae efficitur facilisis, tortor leo tempus tortor, vitae aliquam sem urna sit amet erat. Donec nec risus non erat scelerisque elementum. Mauris accumsan tellus dui, eu hendrerit nibh tempor vitae. Nam convallis est vitae semper viverra. Quisque molestie mauris in lectus commodo faucibus. Nunc vel scelerisque odio. Donec rutrum libero lacus, vitae consequat nisl laoreet vel. Nam lobortis, erat non viverra cursus, nunc magna elementum erat, non viverra ligula urna eget purus.
         </p>
