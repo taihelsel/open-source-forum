@@ -55,7 +55,7 @@ html,body,.App{
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 .hamburger-btn-x div:nth-child(2) {
-    background-color: var(--darkblue);
+    background-color: var(--charcoal);
     z-index: 2;
     transform: rotate(1deg);
 }
