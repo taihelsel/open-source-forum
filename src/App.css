@@ -486,11 +486,13 @@ html,body,.App{
 }
 #related-posts h1{
     font-weight:500;
-    font-size:28px;
+    font-size:23px;
+    letter-spacing: 1.2px;
     border-bottom:3px solid grey;
     padding-bottom:10px;
     font-family: "Roboto", sans-serif;
     color:grey;
+    text-transform: uppercase;
 }
 .related-posts-wrapper{
     width:100%;
@@ -502,6 +504,7 @@ html,body,.App{
 .related-post-item{
     display:inline-block;
     width:30%;
+    cursor:pointer;
 }
 .related-post-item:nth-child(2){
     margin:0 3%;
@@ -566,6 +569,7 @@ html,body,.App{
     padding-bottom:40px;
     border-bottom:1px solid var(--gainsbro);
     display:inline-block;
+    cursor: pointer;
 }
 .explorer-latest-item img{
     width:30%;
@@ -591,6 +595,31 @@ html,body,.App{
     right:0;
     text-align:center;
     width:100%;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.latest-stat-item{
+    display:inline-block;
+}
+.latest-stat-item:nth-child(2){
+    margin:0 2em;
+}
+.latest-stat-item h3{
+    font-size:16px;
+    margin:0;
+    padding:0;
+    display:inline-block;
+    margin-left:7px;
+    vertical-align: middle;
+    font-weight: lighter;
+}
+.latest-stat-item img{    
+    vertical-align: middle;
+    width: 1em;
+    display: inline-block;
+    height: unset;
+    float: unset;
 }
         /*Popular*/
 #explorer-popular-container{
