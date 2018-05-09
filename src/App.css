@@ -456,12 +456,12 @@ html,body,.App{
     position: absolute;
     right:3vw;
     top: 35px;
-
 }
 .author-social li{
     display:inline-block;
     width:1.25em;
     margin-left:12px;
+    cursor:pointer;
 }
 .author-social li img{
     width:100%;
@@ -471,10 +471,44 @@ html,body,.App{
     width:75%;
     display:inline-block;
     position: relative;
-    bottom:0;
+    margin-top:50px;
     margin-left:3vw;
     font-size:19px;
     font-family: "Lobster", serif;
+}
+    /*Related Posts*/
+#related-posts{
+    float:left;
+    width: 60%;
+    margin-left: 50px;
+    text-align: left;
+    position: relative;
+}
+#related-posts h1{
+    font-weight:500;
+    font-size:28px;
+    border-bottom:3px solid grey;
+    padding-bottom:10px;
+    font-family: "Roboto", sans-serif;
+    color:grey;
+}
+.related-posts-wrapper{
+    width:100%;
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-align: center;
+}
+.related-post-item{
+    display:inline-block;
+    width:30%;
+}
+.related-post-item:nth-child(2){
+    margin:0 3%;
+}
+.related-posts-wrapper img{
+    width:100%;
+    height:100%;
 }
     /*Post Sidebar*/
 #PostSidebar{
