@@ -314,7 +314,7 @@ html,body,.App{
     text-align:center;
     overflow:hidden;
 }
-    /*Post Header*/
+    /*SinglePost > PostHeade*/
 .head-divider{
     width:100%;
     border-top:1px solid var(--whiteblue);
@@ -383,7 +383,7 @@ html,body,.App{
     font-weight:lighter;
     font-size:22px;
 }
-    /*Article Content*/
+    /*SinglePost > Body > Article*/
 #Article{
     width:60%;
     margin-left:50px;
@@ -422,7 +422,7 @@ html,body,.App{
     font-family: 'Lobster', serif;
     color:var(--charcoal);
 }
-    /*Author About*/
+    /*SinglePost > Body > AuthorAbout*/
 #about-author{
     float:left;
     width: 60%;
@@ -476,7 +476,7 @@ html,body,.App{
     font-size:19px;
     font-family: "Lobster", serif;
 }
-    /*Related Posts*/
+    /*SinglePost > Body > Related*/
 #related-posts{
     float:left;
     width: 60%;
@@ -513,7 +513,11 @@ html,body,.App{
     width:100%;
     height:100%;
 }
-    /*Post Sidebar*/
+    /*SinglePost > Body > Comments*/
+#Comments{
+
+}
+    /*SinglePost > SidebBar > PostSidebar*/
 #PostSidebar{
     width:30%;
     float:right;
@@ -521,6 +525,7 @@ html,body,.App{
     margin-top:75px;
     position: relative;
 }
+    /*SinglePost > Sidebar > Explorer > ExplorerNav */
 #explorer-nav{
     width:100%;
     overflow: hidden;
@@ -554,13 +559,13 @@ html,body,.App{
 #explorer-nav ul .selected{
     border-bottom:5px solid var(--gold);
 }
+    /*SinglePost > Sidebar > Explorer > Latest*/
 #explorer-latest-container{
     width:100%;
     margin:0;
     padding:0;
     list-style: none;
 }
-        /*Latest*/
 .explorer-latest-item{
     width:90%;
     height:4em;
@@ -623,7 +628,7 @@ html,body,.App{
     height: unset;
     float: unset;
 }
-        /*Popular*/
+    /*SinglePost > SideBar > Explorer > Popular*/
 #explorer-popular-container{
     margin:0;
     padding:0;
@@ -664,7 +669,7 @@ html,body,.App{
     opacity:0.34;
     z-index: 1;
 }
-        /*Tags*/
+    /*SinglePost > SideBar > Explorer > Tags*/
 #explorer-tags-container{
     list-style:none;
     margin:0;
