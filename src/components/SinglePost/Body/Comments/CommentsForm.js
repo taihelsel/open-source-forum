@@ -4,7 +4,7 @@ class CommentsForm extends Component {
     render() {
         return (
             <form id="comments-form">
-                <hr />
+                <h1 className="comments-head">Leave a Reply</h1>
                 <div className="comment-input">
                     <h3>* Name:</h3>
                     <input type="text" required />
@@ -20,7 +20,7 @@ class CommentsForm extends Component {
                 <div className="comment-text">
                     <textarea placeHolder="Comment..."/>
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit">Post Comment</button>
             </form>
         );
     }
