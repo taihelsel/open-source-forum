@@ -4,6 +4,7 @@ class AuthorAbout extends Component {
   render() {
     return (
         <div id="about-author">
+          <h1 className="body-divider">About Jane</h1>
           <img className="author-headshot" src={require("../../.././media/images/stockphotos/headshot.jpg")}/>
           <h1 className="author-name">Jane Doe</h1>
           <ul className="author-social">
