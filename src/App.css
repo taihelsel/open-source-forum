@@ -583,11 +583,13 @@ html,body,.App{
     display: inline-block;
     float: right;
     text-align: left;
-    width: 64%;
+    width: 61%;
     font-weight: 500;
     font-family: "Roboto", sans-serif;
     font-size: 19px;
     margin-top: 6px;
+    padding-left: 15px;
+    border-left: 4px solid var(--gold);
 }
 .explorer-latest-item-stats{
     position: absolute;
