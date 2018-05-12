@@ -27,6 +27,9 @@ class Comments extends Component {
             return (
                 <div id="Comments">
                     <h1 className="comments-head">
+                        {this.props.comments.length} Comments
+                    </h1>
+                    <div className="comments-wrapper">
                         {this.props.comments.map((comment) => {
                             return (
                                 <div>
@@ -37,7 +40,7 @@ class Comments extends Component {
                             )
                         })
                         }
-                    </h1>
+                    </div>
                     <form id="comments-form">
                         <div className="comment-input">
                             <label>Name: *</label>
