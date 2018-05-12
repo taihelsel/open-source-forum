@@ -7,7 +7,7 @@ import PostHead from "./PostHead.js";
 import Article from "./Body/Article.js";
 import AuthorAbout from "./Body/AuthorAbout";
 import Related from  "./Body/Related.js";
-import Comments from "./Body/Comments.js";
+import Comments from "./Body/Comments/Comments.js";
 /*Post Sidebar*/
 import PostSidebar from "./SideBar/PostSidebar.js";
 class SinglePost extends Component {
