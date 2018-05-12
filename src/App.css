@@ -623,8 +623,8 @@ html,body,.App{
     padding: 0.5em 1em;
     border-radius: 3px;
     border: unset;
-    font-weight: bolder;
-    font-family: "Lobster",sans-serif;
+    font-weight: lighter;
+    font-family: "Roboto Slab";
     margin-right: 5.5vmax;
     margin-top: 15px;
 }

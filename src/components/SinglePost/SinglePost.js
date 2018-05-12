@@ -21,7 +21,7 @@ class SinglePost extends Component {
             <Article />
             <AuthorAbout />
             <Related />
-            <Comments comments={[{img:require("../.././media/images/stockphotos/headshot.jpg"),author:"billy bob",text:"Test comment here",datePosted:"May 1, 2018 at 6:40pm"}]} />
+            <Comments comments={[{img:require("../.././media/images/icons/basic-user.png"),author:"billy bob",text:"Test comment here",datePosted:"May 1, 2018 at 6:40pm"}]} />
         </section>
     );
   }
