@@ -4,19 +4,23 @@ class CommentsForm extends Component {
     render() {
         return (
             <form id="comments-form">
+                <hr />
                 <div className="comment-input">
-                    <label>Name: *</label>
-                    <input type="text" />
+                    <h3>* Name:</h3>
+                    <input type="text" required />
                 </div>
                 <div className="comment-input">
-                    <label>Email: *</label>
-                    <input type="text" />
+                    <h3>* Email:</h3>
+                    <input type="text" required />
                 </div>
                 <div className="comment-input">
-                    <label>Website</label>
+                    <h3>Website:</h3>
                     <input type="text" />
                 </div>
-                <button type="submit"></button>
+                <div className="comment-text">
+                    <textarea placeHolder="Comment..."/>
+                </div>
+                <button type="submit">Submit</button>
             </form>
         );
     }
