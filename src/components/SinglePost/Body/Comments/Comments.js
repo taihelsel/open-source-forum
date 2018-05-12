@@ -11,6 +11,7 @@ class Comments extends Component {
         }
         return (
             <div id="Comments">
+                <h1 className="body-divider">Comments</h1>
                 <h1 className="comments-head">
                     {commentsHeadTxt}
                 </h1>

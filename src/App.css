@@ -553,6 +553,8 @@ html,body,.App{
     height: 20vmax;
     resize: none;
     margin-top: 15px;
+    font-weight:lighter;
+    padding:10px;
 }
 #comments-form button{
     float: right;
