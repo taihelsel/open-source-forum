@@ -837,7 +837,7 @@ html,body,.App{
     height: 14em;
     margin-top: 15px;
 }
-.moreauthor-post h1{
+.moreauthor-post .post-title{
     position: absolute;
     top:40%;
     width: 100%;
@@ -846,6 +846,19 @@ html,body,.App{
     color:white;
     z-index: 1;
     user-select: none;
+}
+.moreauthor-post .post-tag{
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    left: 12px;
+    color: var(--paper);
+    font-size: 12px;
+    background-color: var(--tangerine);
+    padding: 0.5em 0.75em;
+    font-weight: lighter;
+    font-family: "Roboto Slab", sans-serif;
+    text-transform: capitalize;
 }
 .moreauthor-post img{
     width:100%;

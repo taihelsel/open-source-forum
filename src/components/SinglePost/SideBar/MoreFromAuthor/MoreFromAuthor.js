@@ -9,7 +9,7 @@ class MoreFromAuthor extends Component {
                 <h1 className="moreauthor-head">More From {this.props.authorname}</h1>
                 <ul className="moreauthor-posts-wrapper">
                     {this.props.authorposts.map((post)=>{
-                        return <Post title={post.title} img={post.img} />
+                        return <Post primarytag={post.primarytag} title={post.title} img={post.img} />
                     })}
                 </ul>
             </div>
