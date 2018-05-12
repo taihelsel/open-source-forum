@@ -1,26 +1,14 @@
 import React, { Component } from 'react';
 
+/*React Components*/
+import CommentsForm from "./CommentsForm.js";
 class Comments extends Component {
     render() {
         if (this.props.comments.length < 1) {
             return (
                 <div id="Comments">
                     <h1 className="comments-head">No Comments</h1>
-                    <form id="comments-form">
-                        <div className="comment-input">
-                            <label>Name: *</label>
-                            <input type="text" />
-                        </div>
-                        <div className="comment-input">
-                            <label>Email: *</label>
-                            <input type="text" />
-                        </div>
-                        <div className="comment-input">
-                            <label>Website</label>
-                            <input type="text" />
-                        </div>
-                        <button type="submit"></button>
-                    </form>
+                    <CommentsForm />
                 </div>
             );
         } else {
@@ -41,21 +29,7 @@ class Comments extends Component {
                         })
                         }
                     </div>
-                    <form id="comments-form">
-                        <div className="comment-input">
-                            <label>Name: *</label>
-                            <input type="text" />
-                        </div>
-                        <div className="comment-input">
-                            <label>Email: *</label>
-                            <input type="text" />
-                        </div>
-                        <div className="comment-input">
-                            <label>Website</label>
-                            <input type="text" />
-                        </div>
-                        <button type="submit">Submit</button>
-                    </form>
+                    <CommentsForm />
                 </div>
             );
         }
