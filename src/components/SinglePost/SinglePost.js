@@ -21,7 +21,7 @@ class SinglePost extends Component {
             <Article />
             <AuthorAbout />
             <Related />
-            <Comments />
+            <Comments comments={[{author:"billy bob",text:"Test comment here",datePosted:"May 1, 2018 at 6:40pm"}]} />
         </section>
     );
   }
