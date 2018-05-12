@@ -609,8 +609,11 @@ html,body,.App{
     height: 20vmax;
     resize: none;
     margin-top: 15px;
-    font-weight:lighter;
-    padding:10px;
+    font-weight: lighter;
+    padding: 10px;
+    background-color: var(--paper);
+    border-radius: 3px;
+    color: var(--charcoal);
 }
 #comments-form button{
     float: right;
