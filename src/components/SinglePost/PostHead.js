@@ -5,7 +5,7 @@ class PostHead extends Component {
     return (
       <div className="single-post-head">
         <img src={require("../.././media/images/stockphotos/camera.jpg")} alt="Image of a camera" />
-        <div className="single-post-head-mask" />
+        <div className="img-mask" />
         <h1 className="single-post-head-label">Camera Ipsum</h1>
         <ul className="post-info">
         <li>

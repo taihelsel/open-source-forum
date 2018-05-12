@@ -9,7 +9,7 @@ class PostSidebar extends Component {
         <div id="PostSidebar">
           <Explorer />
           <Advertisement adImg={"http://via.placeholder.com/350x150?text=Your+ad+here"}/>
-          <MoreFromAuthor />
+          <MoreFromAuthor authorname={"jane doe"} authorposts={[{title:"lorem ipsum",img:require("../../.././media/images/stockphotos/camera.jpg")},{title:"lorem ipsum",img:require("../../.././media/images/stockphotos/camera.jpg")},{title:"lorem ipsum",img:require("../../.././media/images/stockphotos/camera.jpg")}]} />
         </div>
     );
   }

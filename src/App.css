@@ -314,7 +314,7 @@ html,body,.App{
     text-align:center;
     overflow:hidden;
 }
-    /*SinglePost > PostHeade*/
+    /*SinglePost > PostHead*/
 .head-divider{
     width:100%;
     border-top:1px solid var(--whiteblue);
@@ -330,13 +330,14 @@ html,body,.App{
     width:100%;
     height:100%;
 }
-.single-post-head-mask{
+.img-mask{
     width: 100%;
     height: 100%;
     background-color: black;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 0;
     opacity: 0.33;
 }
 .single-post-head-label{
@@ -771,16 +772,6 @@ html,body,.App{
     letter-spacing: 1px;
     font-size:26px;
 }
-.explorer-popular-item .mask{
-    width:100%;
-    height:100%;
-    position: absolute;
-    top:0;
-    left:0;
-    background-color:black;
-    opacity:0.34;
-    z-index: 1;
-}
     /*SinglePost > SideBar > Explorer > Tags*/
 #explorer-tags-container{
     list-style:none;
@@ -817,4 +808,46 @@ html,body,.App{
     /*SinglePost > SideBar > MoreFromAuthor > MoreFromAuthor*/
 #MoreFromAuthor{
     width:100%;
+    margin-top:25px;
+}
+.moreauthor-head{
+    text-transform: capitalize;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    color: var(--charcoal);
+}
+.moreauthor-head::after{
+    content:"";
+    display: block;
+    width:10%;
+    border-bottom:3px solid var(--gold);
+    margin-top:6px;
+}
+.moreauthor-posts-wrapper{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+    /*SinglePost > SideBar > MoreFromAuthor > Post*/
+.moreauthor-post{
+    display:inline-block;
+    width:85%;
+    position: relative;
+    cursor: pointer;
+    height: 14em;
+    margin-top: 15px;
+}
+.moreauthor-post h1{
+    position: absolute;
+    top:40%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    color:white;
+    z-index: 1;
+    user-select: none;
+}
+.moreauthor-post img{
+    width:100%;
+    height:100%;
 }

@@ -7,17 +7,17 @@ class Popular extends Component {
                 <li className="explorer-popular-item">
                     <img src={require("../../../.././media/images/stockphotos/ancient-architecture.jpg")} />
                     <h1>Cathedral of Learning</h1>
-                    <div className="mask"></div>
+                    <div className="img-mask"></div>
                 </li>
                 <li className="explorer-popular-item">
                     <img src={require("../../../.././media/images/stockphotos/camera.jpg")} />
                     <h1>Camera Ipsum</h1>
-                    <div className="mask"></div>
+                    <div className="img-mask"></div>
                 </li>
                 <li className="explorer-popular-item">
                     <img src={require("../../../.././media/images/stockphotos/street.jpg")} />
                     <h1>Street View</h1>
-                    <div className="mask"></div>
+                    <div className="img-mask"></div>
                 </li>
             </ul>
         );
