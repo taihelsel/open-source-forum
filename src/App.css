@@ -515,7 +515,11 @@ html,body,.App{
 }
     /*SinglePost > Body > Comments*/
 #Comments{
-
+    float: left;
+    width: 60%;
+    margin-left: 50px;
+    text-align: left;
+    position: relative;
 }
     /*SinglePost > SidebBar > PostSidebar*/
 #PostSidebar{

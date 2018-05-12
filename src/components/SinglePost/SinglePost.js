@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
 /*React Components*/
+/*Post Body*/
 import Header from ".././Header.js";
 import PostHead from "./PostHead.js";
 import Article from "./Body/Article.js";
 import AuthorAbout from "./Body/AuthorAbout";
 import Related from  "./Body/Related.js";
+import Comments from "./Body/Comments.js";
+/*Post Sidebar*/
 import PostSidebar from "./SideBar/PostSidebar.js";
 class SinglePost extends Component {
   render() {
@@ -18,6 +21,7 @@ class SinglePost extends Component {
             <Article />
             <AuthorAbout />
             <Related />
+            <Comments />
         </section>
     );
   }
