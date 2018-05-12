@@ -3,7 +3,9 @@ class Advertisement extends Component {
     render() {
         return (
             <div className="sidebar-ad">
-                ad here
+                <a href="http://example.com" target="_blank">
+                    <img src={this.props.adImg} />
+                </a>
             </div>
         );
     }

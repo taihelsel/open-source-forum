@@ -805,5 +805,11 @@ html,body,.App{
 }
     /*SinglePost > SideBar  > Advertisement*/
 .sidebar-ad{
-    
+    width:100%;
+    height:20vmax;
+    margin-top:15px;
+}
+.sidebar-ad a ,.sidebar-ad a img{
+    width:100%;
+    height:100%;
 }

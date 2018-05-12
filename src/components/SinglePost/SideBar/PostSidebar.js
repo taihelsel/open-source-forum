@@ -7,7 +7,7 @@ class PostSidebar extends Component {
     return (
         <div id="PostSidebar">
           <Explorer />
-          <Advertisement />
+          <Advertisement adImg={"http://via.placeholder.com/350x150?text=Your+ad+here"}/>
         </div>
     );
   }

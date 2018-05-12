@@ -18,7 +18,7 @@ class CommentsForm extends Component {
                     <input type="text" />
                 </div>
                 <div className="comment-text">
-                    <textarea placeHolder="Comment..."/>
+                    <textarea placeholder="Comment..."/>
                 </div>
                 <button type="submit">Post Comment</button>
             </form>
