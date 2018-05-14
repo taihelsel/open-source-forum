@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 class PostPreview extends Component {
   render() {
     return (
@@ -7,7 +8,7 @@ class PostPreview extends Component {
             <h1>{this.props.title}</h1>
             <p>{this.props.content}</p>
             <div className="post-preview-footer">
-              <a href="">Keep Reading...</a>
+              <Link to={"/posts/test"}>Keep Reading...</Link>
             </div>
         </li>
     );

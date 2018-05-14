@@ -197,7 +197,7 @@ html,body,.App{
     color:var(--paper);
     text-align: left;
 }
-.main-highlight-desc button{
+.main-highlight-desc a{
     padding:0.5vmax 1vmax;
     font-size:1.4vmax;
     color:var(--paper);
@@ -209,6 +209,7 @@ html,body,.App{
     position: absolute;
     bottom: 1vmax;
     left:15%;
+    text-decoration: none;
 }
 .secondary-highlights{
     list-style: none;
