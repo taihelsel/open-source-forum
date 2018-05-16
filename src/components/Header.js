@@ -17,8 +17,7 @@ class Header extends Component {
     }
     render() {
         return (
-            <section id="Header" >
-                {/* <h1 className="header-placeholder">Your Logo Here</h1> */}
+            <section id="Header" >s
                 <img className="header-logo" src="https://arizonachristian.edu/wp-content/uploads/2017/06/logo-placeholder.png" />
                 <nav className="header-nav">
                     <ul className="social-links-wrapper">
