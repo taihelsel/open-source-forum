@@ -15,10 +15,12 @@ class Highlights extends Component {
             </div>
             <ul className="secondary-highlights">
               <li className="secondary-highlight-item">
+                <div className="img-mask"></div>
                 <h1>Street Ipsum</h1>
                 <Link to={"/posts/test"}><img src={require("../.././media/images/stockphotos/street.jpg")} alt="Picture of street"/></Link>
               </li>
               <li className="secondary-highlight-item">
+                <div className="img-mask"></div>
                 <h1>Camera Ipsum</h1>
                 <Link to={"/posts/test"}><img src={require("../.././media/images/stockphotos/camera.jpg")} alt="Picture of street"/></Link>
               </li>
