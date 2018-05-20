@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 /*React Components*/
 /*Post Body*/
-import Header from ".././Header.js";
+import Header from ".././Header/Header.js";
 import PostHead from "./PostHead.js";
 import Article from "./Body/Article.js";
 import AuthorAbout from "./Body/AuthorAbout";

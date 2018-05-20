@@ -12,13 +12,20 @@
 html,body,.App{
     background-color:var(--paper);
 }
-/*Header Stuff*/ 
+/*Header*/
+    /*Header > Header */ 
 #Header{
     height:22vw;
     width:100%;
     position: relative;
     text-align: center;
 }
+.header-logo{
+    position: relative;
+    display: inline-block;
+    margin-top:5%;
+}
+    /*Header > TopNav */ 
 .header-nav{
     background-color:var(--charcoal);
     height:2.5em;
@@ -117,10 +124,15 @@ html,body,.App{
     border-left:5.5px solid var(--darkblue);
     border-right: 5.5px solid var(--darkblue);
 }
-.header-logo{
-    position: relative;
-    display: inline-block;
-    margin-top:5%;
+    /*Header > CollapsibleNav*/
+.collapsible-nav{
+    position: absolute;
+    right:0;
+    top:2.5em;
+    background-color: var(--darkblue);
+    width:33%;
+    height:100vh;
+    z-index: 9999;
 }
 /*Home Page*/
 #Home{
