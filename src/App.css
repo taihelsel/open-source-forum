@@ -11,6 +11,7 @@
 }
 html,body,.App{
     background-color:var(--paper);
+    overflow-x:hidden;
 }
 /*Header*/
     /*Header > Header */ 
@@ -30,7 +31,7 @@ html,body,.App{
     background-color:var(--charcoal);
     height:2.5em;
     width:100%;
-    position: absolute;
+    position: fixed;
     top:0;
     z-index: 9989;
     text-align:left;
@@ -126,12 +127,15 @@ html,body,.App{
 }
     /*Header > CollapsibleNav*/
 #collapsible-nav{
-    position: absolute;
+    position: fixed;
     right:0;
     top:2.5em;
-    background-color: var(--darkblue);
+    background-color: #373737eb;
     height:100vh;
     z-index: 9999;
+    text-align: center;
+    width:25vmax;
+    transform:translateX(100%);
 }
 #collapsible-nav.open{
     animation: 0.5s linear open-collapsible-nav;
@@ -140,6 +144,11 @@ html,body,.App{
 #collapsible-nav.close{
     animation: 0.5s linear close-collapsible-nav;
     animation-fill-mode:forwards;
+}
+.collapsible-logo{
+    width:95%;
+    display: inline-block;
+    height:9em;
 }
 /*Home Page*/
 #Home{
@@ -889,21 +898,21 @@ html,body,.App{
     /*Header > CollapsibleNav*/
     @keyframes open-collapsible-nav {
         from {
-            width: 0%;
             display: none;
+            transform:translateX(100%);
         }
         to {
-            width:25vmax;
             display: block;
+            transform:translateX(0%);
         }
     }
     @keyframes close-collapsible-nav {
-        from {
-            width: 25vmax;
+        from{
             display: block;
+            transform:translateX(0%);
         }
-        to {
-            width:0;
+        to{
+            transform:translateX(100%);
             display:none;
         }
     }

@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class CollapsibleNav extends Component {
     render() {
         return (
-            <nav id="collapsible-nav" style={{width:"0%"}}>
-                CollapsibleNav here
+            <nav id="collapsible-nav">
+                <img className="collapsible-logo" src="https://arizonachristian.edu/wp-content/uploads/2017/06/logo-placeholder.png" alt="Company logo"/>   
             </nav>
         );
     }
