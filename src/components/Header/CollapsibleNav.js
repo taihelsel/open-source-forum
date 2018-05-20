@@ -2,15 +2,11 @@ import React, { Component } from 'react';
 
 class CollapsibleNav extends Component {
     render() {
-        if(this.props.show){
-            return (
-                <nav className="collapsible-nav">
-                    CollapsibleNav here
-                </nav>
-            );
-        }else{
-            return <div></div>
-        }
+        return (
+            <nav id="collapsible-nav" style={{width:"0%"}}>
+                CollapsibleNav here
+            </nav>
+        );
     }
 }
 

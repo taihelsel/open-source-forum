@@ -16,11 +16,14 @@ class Header extends Component {
             Convert hamburger menu to original state and hide CollapsibleNav
             */
             e.currentTarget.classList.remove("hamburger-btn-x");
+            document.getElementById("collapsible-nav").setAttribute("class","close")
         } else {
             /*
             Convert hamburger menu to X and show CollapsibleNav
             */
             e.currentTarget.classList.add("hamburger-btn-x");
+            document.getElementById("collapsible-nav").setAttribute("class","open")
+
         }
         this.setState({
             showCollapsibleNav: !(this.state.showCollapsibleNav),
@@ -33,7 +36,7 @@ class Header extends Component {
         return (
             <section id="Header" >
                 <TopNav searchClick={this.handleSearchClick} humburgerClick={this.handleHamburgerClick} />
-                <CollapsibleNav show={this.state.showCollapsibleNav}/>
+                <CollapsibleNav/>
                 <img className="header-logo" src="https://arizonachristian.edu/wp-content/uploads/2017/06/logo-placeholder.png" />
             </section>
         );

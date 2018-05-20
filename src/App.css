@@ -125,14 +125,21 @@ html,body,.App{
     border-right: 5.5px solid var(--darkblue);
 }
     /*Header > CollapsibleNav*/
-.collapsible-nav{
+#collapsible-nav{
     position: absolute;
     right:0;
     top:2.5em;
     background-color: var(--darkblue);
-    width:33%;
     height:100vh;
     z-index: 9999;
+}
+#collapsible-nav.open{
+    animation: 0.5s linear open-collapsible-nav;
+    animation-fill-mode:forwards;
+}
+#collapsible-nav.close{
+    animation: 0.5s linear close-collapsible-nav;
+    animation-fill-mode:forwards;
 }
 /*Home Page*/
 #Home{
@@ -877,3 +884,26 @@ html,body,.App{
     width:100%;
     height:100%;
 }
+
+/*Animations*/
+    /*Header > CollapsibleNav*/
+    @keyframes open-collapsible-nav {
+        from {
+            width: 0%;
+            display: none;
+        }
+        to {
+            width:25vmax;
+            display: block;
+        }
+    }
+    @keyframes close-collapsible-nav {
+        from {
+            width: 25vmax;
+            display: block;
+        }
+        to {
+            width:0;
+            display:none;
+        }
+    }
