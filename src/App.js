@@ -4,14 +4,14 @@ import './App.css';
 
 /*React Components*/
 import Home from "./components/Home/Home.js";
-import SinglePost from "./components/SinglePost/SinglePost.js";
+import Article from "./components/Article/Article.js";
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="App">
           <Route exact path="/" component={Home} />
-          <Route exact path="/posts/test" component={SinglePost} />
+          <Route exact path="/posts/test" component={Article} />
         </div>
       </Router>
     );

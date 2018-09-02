@@ -22,10 +22,6 @@ class TopNav extends Component {
                     </li>
                 </ul>
                 <ul className="nav-control-wrapper">
-                    <li onClick={this.props.searchClick} className="search-btn">
-                        <img src={require("../.././media/images/icons/search-icon.png")} alt="Search Icon" />
-                    </li>
-                    <li className="control-divider"></li>
                     <li onClick={this.props.humburgerClick} className="hamburger-btn">
                         <div></div>
                         <div></div>
