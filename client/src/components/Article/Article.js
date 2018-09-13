@@ -28,30 +28,26 @@ class Article extends Component {
         method: "POST"
       })
         .then((response) => {
-          if(response.ok){
+          if (response.ok) {
             return response.json();
-          }else{
+          } else {
             this.setState({
               error: true,
             });
           }
         })
         .then((res) => {
-          if (res.error) {
-
-          } else {
-            const p_d = this.formatDate(parseInt(res.post_date));
-            this.setState({
-              has_data: true,
-              post_date: p_d,
-              title: res.title,
-              content: res.content,
-              tags: res.tags,
-              views: res.views,
-              likes: res.likes,
-              lastEdit: res.lastEdit
-            });
-          }
+          const p_d = this.formatDate(parseInt(res.post_date));
+          this.setState({
+            has_data: true,
+            post_date: p_d,
+            title: res.title,
+            content: res.content,
+            tags: res.tags,
+            views: res.views,
+            likes: res.likes,
+            lastEdit: res.lastEdit
+          });
         });
     }
   }
