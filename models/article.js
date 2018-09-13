@@ -33,10 +33,11 @@ var Article = new mongoose.Schema({
     updated: {
         type: Date,
         default: Date.now
-    },
-    author:{
-        type: Schema.Types.ObjectId, ref: 'Blogger' //todo
     }
+    //TODO
+    // author:{
+    //     type: Schema.Types.ObjectId, ref: 'Blogger' //todo
+    // }
 });
 
 
