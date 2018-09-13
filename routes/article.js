@@ -10,7 +10,7 @@ router.post("/:id", (req, res) => {
             return res.json(post);
         }
         else {
-            return res.status(400).send({ error: true, message: 'Bad Request - Article does not exist' });
+            return res.status(404).send({ error: true, message: 'Bad Request - Article does not exist' });
         }
     });
 });
