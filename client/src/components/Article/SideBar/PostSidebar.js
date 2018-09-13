@@ -6,7 +6,7 @@ class PostSidebar extends Component {
   render() {
     return (
       <div id="PostSidebar">
-        <Explorer />
+        <Explorer tags={this.props.tags} />
         <div className="sidebar-ad">
           <a href="http://example.com" target="_blank">
             <img src={"http://via.placeholder.com/350x150?text=Your+ad+here"} />

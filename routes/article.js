@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
 const Article = require(".././models/article");
+
+//getting article by id
 router.post("/:id", (req, res) => {
     Article.findOne({ post_id: req.params.id }, function (err, post) {
         if (post) {

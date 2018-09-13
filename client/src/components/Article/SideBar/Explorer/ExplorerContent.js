@@ -13,13 +13,13 @@ const ExplorerContent = (props) => {
             return <Popular />
             break;
         case "tags":
-            return <Tags />
+            return <Tags tags={props.tags} />
             break;
         default:
             return (
                 <div>
                     error
-                    </div>
+                </div>
             );
             break;
     }

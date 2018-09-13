@@ -22,7 +22,7 @@ class Explorer extends Component {
         return (
             <div>
                 <ExplorerNav handleNavClick={this.handleNavClick} />
-                <ExplorerContent currentNav={this.state.currentNav} />
+                <ExplorerContent tags={this.props.tags} currentNav={this.state.currentNav} />
             </div>
         );
     }

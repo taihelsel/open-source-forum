@@ -17,20 +17,29 @@ class Article extends Component {
       views: "",
       likes: "",
       lastEdit: "",
+      error: false,
     }
   }
   componentWillMount = () => {
     if (this.state.has_data === false) {
       let p_id = this.props.location.pathname;
       p_id = p_id.split("/posts/");
-      fetch("/api/article/" +p_id[1], {
+      fetch("/api/article/" + p_id[1], {
         method: "POST"
       })
-        .then(response => response.json())
-        .then((res) => {
-          if(res.error){
-            console.log("err");
+        .then((response) => {
+          if(response.ok){
+            return response.json();
           }else{
+            this.setState({
+              error: true,
+            });
+          }
+        })
+        .then((res) => {
+          if (res.error) {
+
+          } else {
             const p_d = this.formatDate(parseInt(res.post_date));
             this.setState({
               has_data: true,
@@ -59,7 +68,7 @@ class Article extends Component {
         <div className="single-post-head">
           <img src={require("../.././media/images/stockphotos/camera.jpg")} alt="Image of a camera" />
           <div className="img-mask" />
-          <h1 className="single-post-head-label">Camera Ipsum</h1>
+          <h1 className="single-post-head-label">{this.state.title}</h1>
           <ul className="post-info">
             <li>
               <img src={require("../.././media/images/icons/clock.png")} />
@@ -75,7 +84,7 @@ class Article extends Component {
             </li>
           </ul>
         </div>
-        <PostSidebar />
+        <PostSidebar tags={this.state.tags} />
         <div id="article-body">
           <div className="author-info-head">
             <p>By Jane Doe</p>
@@ -108,9 +117,12 @@ class Article extends Component {
         </div>
         <Comments comments={[{ img: require("../.././media/images/icons/basic-user.png"), author: "billy bob", text: "Test comment here", datePosted: "May 1, 2018 at 6:40pm" }]} />
       </section>
-    ) : (
-        <div>loader here</div>
-      )
+    ) :
+      this.state.error === true ? (
+        <div>error here</div>
+      ) : (
+          <div> loader here </div>
+        )
   }
 }
 
