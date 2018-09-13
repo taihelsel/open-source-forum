@@ -1,17 +1,32 @@
 {
-  "name": "OS-blogger",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "*",
-    "react-dom": "*",
-    "react-router-dom": "*",
-    "react-scripts": "*"
-  },
+  "name": "os-blogger",
+  "version": "1.0.0",
+  "description": "Todo",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build":"npm run-script build --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server \" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taihelsel/os-blogger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taihelsel/os-blogger/issues"
+  },
+  "homepage": "https://github.com/taihelsel/os-blogger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.2.14",
+    "path": "^0.12.7"
   }
 }
