@@ -13,7 +13,10 @@ class Home extends Component {
     }
   }
   updatePrimNav = (new_primary_nav) => {
-    this.setState({primary_nav:new_primary_nav});
+    if(new_primary_nav === "articles" && this.state.secondary_nav===""){
+      console.log("Test");
+      this.setState({primary_nav:new_primary_nav,secondary_nav:"new entry"});
+    }else this.setState({primary_nav:new_primary_nav});
   }
   updateSecNav = (new_secondary_nav) => {
     this.setState({secondary_nav:new_secondary_nav});
@@ -31,7 +34,7 @@ class Home extends Component {
   render() {
     return (
         <section id="home">
-            <SideNav currentPrimNav={this.state.primary_nav} updatePrimNav={this.updatePrimNav} updateSecNav={this.updateSecNav} />
+            <SideNav currentPrimNav={this.state.primary_nav} updatePrimNav={this.updatePrimNav} updateSecNav={this.updateSecNav} currentSecNav={this.state.secondary_nav}/>
             {this.renderPage()}
         </section>
     );

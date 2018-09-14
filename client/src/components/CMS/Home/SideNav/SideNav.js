@@ -17,7 +17,7 @@ class SideNav extends Component {
           <li onClick={this.changeNav} >Articles</li>
           <li onClick={this.changeNav} >Logout</li>
         </ul>
-        <SubNav updateSecNav={this.props.updateSecNav} selectedNav={this.props.currentPrimNav}/>
+        <SubNav updateSecNav={this.props.updateSecNav} currentSecNav={this.props.currentSecNav} selectedNav={this.props.currentPrimNav}/>
       </div>
     );
   }
