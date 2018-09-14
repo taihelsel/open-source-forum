@@ -23,9 +23,9 @@ class Article extends Component {
   componentWillMount = () => {
     if (this.state.has_data === false) {
       let p_id = this.props.location.pathname;
-      p_id = p_id.split("/posts/");
-      fetch("/api/article/" + p_id[1], {
-        method: "POST"
+      p_id = p_id.split("/article/");
+      fetch("/api/article/" + p_id[1],{
+        method:"POST"
       })
         .then((response) => {
           if (response.ok) {
