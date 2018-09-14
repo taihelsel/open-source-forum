@@ -9,5 +9,10 @@ router.post("/:id", (req, res) => {
         else return res.status(404).send({ error: true, message: 'Bad Request - Article does not exist' });
     });
 });
+//for creating new articles (need to add validation)
+router.post("/new/article", (req, res) => {
+    console.log(req);
+    res.send(req.body);
+});
 
 module.exports = router;

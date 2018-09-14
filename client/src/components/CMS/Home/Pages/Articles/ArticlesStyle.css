@@ -1,6 +1,7 @@
 #new-entry{
     text-align: center;
     padding-top:100px;
+    animation: 0.4s ease-in-out show-contents;
 }
 #new-entry-form{
     text-align: left;
@@ -37,4 +38,13 @@
 }
 .form-submit:hover{
     background-color:var(--charcoal);
+}
+
+@keyframes show-contents {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
