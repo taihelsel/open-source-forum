@@ -3,6 +3,9 @@ import "./ArticlesStyle.css";
 import NewEntry from './NewEntry';
 import ViewAll from './ViewAll';
 class Articles extends Component {
+  componentWillMount = () => {
+    this.props.secondaryNav = "new entry";
+  }
   renderPage = () => {
     switch(this.props.secondaryNav){
       case "new entry":

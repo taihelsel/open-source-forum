@@ -8,13 +8,15 @@
     display: inline-block;
 }
 .form-control{
-
+    margin-bottom:25px;
 }
 .form-control h2{
     display: inline-block;
     font-size:18px;
     font-weight:normal;
     width:250px;
+    vertical-align: top;
+    margin:0;
 }
 .form-control input{
     display: inline-block;
