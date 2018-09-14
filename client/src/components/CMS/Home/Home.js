@@ -15,6 +15,9 @@ class Home extends Component {
   updatePrimNav = (new_primary_nav) => {
     this.setState({primary_nav:new_primary_nav});
   }
+  updateSecNav = (new_secondary_nav) => {
+    this.setState({secondary_nav:new_secondary_nav});
+  }
   renderPage = () => {
     switch(this.state.primary_nav){
       case "dash":
@@ -28,7 +31,7 @@ class Home extends Component {
   render() {
     return (
         <section id="home">
-            <SideNav currentPrimNav={this.state.primary_nav} updatePrimNav={this.updatePrimNav} />
+            <SideNav currentPrimNav={this.state.primary_nav} updatePrimNav={this.updatePrimNav} updateSecNav={this.updateSecNav} />
             {this.renderPage()}
         </section>
     );
