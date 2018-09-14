@@ -1,0 +1,40 @@
+#new-entry{
+    text-align: center;
+    padding-top:100px;
+}
+#new-entry-form{
+    text-align: left;
+    display: inline-block;
+}
+.form-control{
+
+}
+.form-control h2{
+    display: inline-block;
+    font-size:18px;
+    font-weight:normal;
+    width:250px;
+}
+.form-control input{
+    display: inline-block;
+}
+.form-control textarea{
+    resize: none;
+    width:550px;
+    height:300px;
+}
+.form-submit{
+    cursor: pointer;
+    border:none;
+    color:var(--paper);
+    background-color:#333030;
+    font-size:18px;
+    padding:8px 15px;
+    border-radius: 3px;
+    float:right;
+    margin-top:30px;
+    font-weight: 700;
+}
+.form-submit:hover{
+    background-color:var(--charcoal);
+}
