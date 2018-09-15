@@ -30,12 +30,18 @@
     border-left:4px solid var(--yellow);
 }
 /*Sub Nav (secondary)*/
+#side-nav .secondary-show{
+    animation: 0.3s ease-in-out show-subnav;
+    animation-fill-mode: forwards;
+}
+#side-nav .secondary-close{
+    animation: 0.25s ease-in-out hide-subnav;
+    animation-fill-mode: forwards;
+}
 #side-nav .secondary{
     background-color:#333030;
     color:white;
     height:100vh;
-    animation: 0.3s ease-in-out show-subnav;
-    animation-fill-mode: forwards;
     text-align: center;
 }
 #side-nav .secondary li{
@@ -59,10 +65,29 @@
     from {
         display: none;
         width:0;
+        background-color:var(--paper);
     }
     to {
+        background-color:#333030;
         width:200px;
         display: block;
+    }
+}
+@keyframes hide-subnav {
+    0% {
+        background-color:#333030;
+        width:200px;
+        display:block;
+    }
+    99.99%{
+        width:0px;
+        display:block;
+        background-color:var(--paper);
+    }
+    100% {
+        background-color:var(--paper);
+        display: none;
+        width:0;
     }
 }
 
