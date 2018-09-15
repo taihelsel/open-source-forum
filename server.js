@@ -9,6 +9,7 @@ const port = 5000;
 const db_name = "osblogger";
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/" + db_name, { useNewUrlParser: true });//mongo stuff
+//middleware
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ limit: "50mb", extended: true, parameterLimit: 50000 }));
 app.use(express.static(path.resolve(__dirname, 'client', 'build')));
@@ -20,6 +21,7 @@ app.get("*", (req, res) => {
 });
 //routes
 app.use('/api/article', require('./routes/article'));
+app.use('/api/user', require('./routes/user'));
 
 //hooking port
 app.listen(port, () => {
