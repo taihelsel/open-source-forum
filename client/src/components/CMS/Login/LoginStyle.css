@@ -1,0 +1,61 @@
+#login{
+    text-align: center;
+}
+#pannel-login-form{
+    text-align:left;
+    display:inline-block;
+    margin-top:200px;
+    padding:45px 100px 30px 100px;
+    background-color:#08415cc7;
+    border-radius: 2px;
+}
+#pannel-login-form .form-control{
+
+}
+#pannel-login-form .form-header{
+    text-align: center;
+    margin:0 0 40px 0;
+    color:var(--paper);
+    font-weight:normal;
+    font-size:30px;
+    letter-spacing: -0.6px;
+}
+#pannel-login-form .form-control h1{
+    display:block;
+    margin:0;
+    font-size:22px;
+    font-weight: normal;
+    margin-bottom:20px;
+    color:var(--paper);
+}
+#pannel-login-form .form-control input{
+    font-size:18px;
+    width:300px;
+    padding:5px 0;
+    border:none;
+}
+#pannel-login-form #login-btn{
+    background-color:var(--paper);
+    color:#08415cc7;
+    border:none;
+    font-size:18px;
+    padding:6.5px 25px;
+    border-radius: 3px;
+    float:right;
+    cursor: pointer;
+}
+#pannel-login-form #login-btn:hover{
+    background-color:var(--whiteblue);
+}
+#login .error-message{
+    position: absolute;
+    top:0;
+}
+.error-message{
+    background-color:var(--red);
+    width:100%;
+    font-size:25px;
+    padding: 15px 0;
+    color:var(--paper);
+    font-weight:bold;
+}
