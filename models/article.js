@@ -1,6 +1,6 @@
-var mongoose = require("mongoose");
-
-var Article = new mongoose.Schema({
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+const Article = new mongoose.Schema({
     post_id: {
         type: String,
         required: true
@@ -33,11 +33,11 @@ var Article = new mongoose.Schema({
     updated: {
         type: Date,
         default: Date.now
+    },
+    author:{
+        type: Schema.Types.ObjectId, 
+        ref: 'User'
     }
-    //TODO
-    // author:{
-    //     type: Schema.Types.ObjectId, ref: 'Blogger' //todo
-    // }
 });
 
 

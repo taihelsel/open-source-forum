@@ -1,11 +1,12 @@
+require('dotenv').config();
 const express = require("express");
 const router = express.Router();
-// const mongoose = require("mongoose");
-// const Article = require(".././models/article");
+const jwt = require('jsonwebtoken');
+const passport = require('../config/passportConfig');
+const mongoose = require("mongoose");
+const User = require(".././models/user");
 
-//User login. Determine if admin, blogger, or basic user here
-router.post("/login", (req, res) => {
-    res.json({"working":"login route"})
+router.post("/test", (req, res) => {
+    console.log("user test route hit");
 });
-
 module.exports = router;

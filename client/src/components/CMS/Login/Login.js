@@ -21,18 +21,18 @@ class Login extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         const data = {
-            username:this.state.username,
-            password:this.state.password
+            username: this.state.username,
+            password: this.state.password
         }
         if (this.state.username.length >= this.state.min_user && this.state.password.length >= this.state.min_pass) {
-            fetch("/api/user/login", {
-                method:"POST",
-                cache: "no-cache", 
-                credentials: "same-origin", 
-                headers:{
+            fetch("/auth/login", {
+                method: "POST",
+                cache: "no-cache",
+                credentials: "same-origin",
+                headers: {
                     "Content-Type": "application/json; charset=utf-8"
                 },
-                body:JSON.stringify(data)
+                body: JSON.stringify(data)
             }).then((response) => {
                 if (response.ok) {
                     return response.json();
